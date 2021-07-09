@@ -131,9 +131,6 @@ export class Cache {
                 src += '?v=' + new Date().getTime();
                 img.src = src;
             }
-            img.crossOrigin = 'anonymous';
-            img.setAttribute('crossOrigin', 'anonymous');
-            src += '?v=' + new Date().getTime();
             img.src = src;
             if (img.complete === true) {
                 // Inline XML images may fail to parse, throwing an Error later on
